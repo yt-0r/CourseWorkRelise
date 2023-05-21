@@ -1,4 +1,7 @@
+#include <iostream>
+#include "Logic.h"
 #include "Graphic.h"
+#include "Audio.h"
 
 int main()
 {
