@@ -3,7 +3,7 @@
 int main()
 {
 	sf::RenderWindow window(sf::VideoMode(200, 200), "Lesson 2. kychka-pc.ru");
-	sf::CircleShape shape(100.f);
+	sf::CircleShape shape(100, 5);
 	shape.setFillColor(sf::Color::Red);
 
 	while (window.isOpen())
@@ -11,7 +11,7 @@ int main()
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
-			if (event.type == sf::Event::Closed)
+			if (event.type == sf::Event::Closed);
 				window.close();
 		}
 
