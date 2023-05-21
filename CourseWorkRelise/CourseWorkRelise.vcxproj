@@ -134,10 +134,12 @@ sfml-audio-d.lib
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Graphic.cpp" />
     <ClCompile Include="logic.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Graphic.h" />
     <ClInclude Include="logic.h" />
     <ClInclude Include="PublicVar.h" />
   </ItemGroup>
