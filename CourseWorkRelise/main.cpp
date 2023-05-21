@@ -13,23 +13,25 @@ bool isPlayerTurn = true; // ход игрока
 
 int main() {
 {
-	sf::RenderWindow window(sf::VideoMode(200, 200), "Lesson 2. kychka-pc.ru");
-	sf::CircleShape shape(100, 5);
-	shape.setFillColor(sf::Color::Red);
+	int playerGrid[size + 2][size + 2]; // игровое поле игрока
+    int computerGrid[size + 2][size + 2]; // игровое поле компьютера
 
-	while (window.isOpen())
-	{
-		sf::Event event;
-		while (window.pollEvent(event))
-		{
-			if (event.type == sf::Event::Closed);
-				window.close();
-		}
+    RenderWindow window(VideoMode((size+2) * cellSize * 2, (size + 2) * cellSize), "Battleships", Style::Titlebar | Style::Close);
+    window.setFramerateLimit(60);
 
-		window.clear();
-		window.draw(shape);
-		window.display();
-	}
+    srand(time(NULL));
+
+    if (zeroGrid(playerGrid, computerGrid) != 0) {
+        return 1;
+    }
+
+    if (initGraphic() != 0 || initAudio()) {
+        return 1;
+    }
+
+    if (Ship_placement(computerGrid, size) != 0 || Ship_placement(playerGrid, size) != 0) {
+        return 1;
+    }
 
 	return 0;
 }
