@@ -3,7 +3,15 @@
 #include "Graphic.h"
 #include "Audio.h"
 
-int main()
+using namespace sf;
+
+int win = 0;
+int lose = 0;
+bool isPaused = 0;
+
+bool isPlayerTurn = true; // ход игрока
+
+int main() {
 {
 	sf::RenderWindow window(sf::VideoMode(200, 200), "Lesson 2. kychka-pc.ru");
 	sf::CircleShape shape(100, 5);
