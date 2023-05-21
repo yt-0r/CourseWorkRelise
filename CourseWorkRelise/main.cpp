@@ -101,6 +101,15 @@ int main() {
             }
 
         }
+        if (win == 20) {
+            std::cout << "You won!";
+            window.close();
+        }
+        if (lose == 20) {
+            std::cout << "You lost!";
+            window.close();
+        }
     }
+
 	return 0;
 }
