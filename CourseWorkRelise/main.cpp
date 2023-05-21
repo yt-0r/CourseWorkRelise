@@ -12,7 +12,6 @@ bool isPaused = 0;
 bool isPlayerTurn = true; // ход игрока
 
 int main() {
-{
 	int playerGrid[size + 2][size + 2]; // игровое поле игрока
     int computerGrid[size + 2][size + 2]; // игровое поле компьютера
 
