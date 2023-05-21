@@ -134,6 +134,7 @@ sfml-audio-d.lib
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Audio.cpp" />
     <ClCompile Include="Graphic.cpp" />
     <ClCompile Include="logic.cpp" />
     <ClCompile Include="main.cpp" />
