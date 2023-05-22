@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/battleship.dir/main.cpp.o -o ../bin/battleship  audio/libaudio.a graphics/libgraphics.a logic/liblogic.a -lsfml-audio -lsfml-system -lsfml-graphics -lsfml-window public_variables/libpublic_variables.a 

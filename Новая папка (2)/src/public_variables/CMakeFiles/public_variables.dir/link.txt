@@ -1,0 +1,2 @@
+/usr/bin/ar qc libpublic_variables.a 
+/usr/bin/ranlib libpublic_variables.a
