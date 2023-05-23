@@ -17,7 +17,7 @@ CTEST (ctest, Ship_placementCheck) {
     ASSERT_TRUE(checkShip_placementTrue);
     
 
-    bool checkShip_placementFalse = Ship_placement(int b[size + 2][size + 2], int size);
+    bool checkShip_placementFalse = Ship_placement(int b[size + 3][size + 4], int size);
     ASSERT_FALSE(checkShip_placementFalse);
 }
 
