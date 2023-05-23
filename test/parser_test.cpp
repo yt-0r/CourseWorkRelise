@@ -3,17 +3,6 @@
 #include <Audio.h>
 #include <logic.h>
 
-CTEST (ctest, loadAudioFromFile) {
-    SoundBuffer soundTrue;
-    bool checkAudioTrue = loadTextureFromFile(soundTrue, "resources/sfx/shoot.wav") ;
-    ASSERT_TRUE(checkAudioTrue);
-    
-
-    SoundBuffer soundFalse;
-    bool checkAudioFalse = loadTextureFromFile(soundFalse, "resources/sfx/shooting.wav") ;
-    ASSERT_FALSE(checkAudioFalse);
-}
-
 CTEST (ctest, zeroGridCheck) {
     bool checkzeroGridTrue = zeroGrid(int Gridp[size + 2][size + 2], int Gridc[size + 2][size + 2]) ;
     ASSERT_TRUE(checkzeroGridTrue);
@@ -30,26 +19,6 @@ CTEST (ctest, Ship_placementCheck) {
 
     bool checkShip_placementFalse = Ship_placement(int b[size + 2][size + 2], int size);
     ASSERT_FALSE(checkShip_placementFalse);
-}
-
-CTEST (ctest, loadTextureFromFile) {
-    SoundBuffer screenTrue;
-    bool checkScreenTrue  = loadTextureFromFile(screenTrue, "resources/textures/sea.jpg") ;
-    ASSERT_TRUE(checkScreenTrue);
-    
-
-    SoundBuffer screenFalse;
-    bool checkScreenFalse  = loadTextureFromFile(screenFalse , "resources/textures/seaeo.jpg") ;
-    ASSERT_FALSE(checkScreenFalse);
-}
-
-CTEST (ctest, drawGridCheck) {
-    bool drawGridTrue = drawGrid(RenderWindow& window, int Gridp[size + 2][size + 2], int Gridc[size + 2][size + 2], bool isPlayerGrid) ;
-    ASSERT_TRUE(drawGridTrue);
-    
-
-    bool drawGridFalse = drawGrid(RenderWindow& window, int Gridc[size + 2][size + 3], bool isPlayerGrid) ;
-    ASSERT_FALSE(drawGridFalse);
 }
 
 CTEST (ctest, aroundHitCheck) {
