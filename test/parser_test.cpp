@@ -32,7 +32,7 @@ CTEST (ctest, aroundHitCheck) {
 
 CTEST (ctest, computerHitCheck) {
     bool computerHitTrue = computerHit(int Grid[size + 2][size + 2], int hits, int& x, int& y) ;
-    ASSERT_TRUE(aroundHitTrue);
+    ASSERT_TRUE(computerHitTrue);
     
 
     bool computerHit = computerHit(int Grid[size + 3][size + 2], int& x, int& y) ;
