@@ -7,6 +7,6 @@ set(CMAKE_CXX_EXTENCION OFF)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 set(SFML_STATIC_LIBRARIES TRUE)
-find_package(SFML COMPONENTS system window graphics)
+find_package(SFML COMPONENTS system window graphics audio)
 
 add_subdirectory(src)
