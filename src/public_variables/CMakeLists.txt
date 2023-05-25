@@ -1,3 +1,0 @@
-add_library(public_variables STATIC public_variables.h)
-set_target_properties(public_variables PROPERTIES LINKER_LANGUAGE CXX)
-target_include_directories(public_variables PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
